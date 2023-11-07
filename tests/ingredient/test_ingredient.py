@@ -3,10 +3,12 @@ from src.models.ingredient import Ingredient, Restriction  # noqa: F401, E261, E
 
 # Req 1
 def test_ingredient():
+    # Initialization of ingredients
     ingredient1 = Ingredient("farinha")
     ingredient2 = Ingredient("farinha")
     ingredient3 = Ingredient("ovo")
 
+    # testing functions
     assert ingredient1.name == "farinha"
     assert ingredient1.restrictions == {Restriction.GLUTEN}
 
